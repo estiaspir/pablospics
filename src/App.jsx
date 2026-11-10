@@ -5,6 +5,7 @@ import Home from './pages/home.jsx'
 import Auth from './pages/Auth.jsx'
 import Checkout from './pages/Checkout.jsx'
 import Navbar from './components/Navbar.jsx'
+import AuthProvider from './context/AuthContext.jsx'
 import './App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <>
+      <AuthProvider>
       <Navbar />
       <div className="app"><h1>I love Pablo</h1>
         <Routes>
@@ -20,6 +22,7 @@ function App() {
           <Route path="/checkout" element={<Checkout />} />
         </Routes>
       </div>
+      </AuthProvider>
     </>
   )
 }

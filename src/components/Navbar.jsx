@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom'
+import { useAuth } from '../context/AuthContext.jsx'
+
        
         
-        export default function Navbar() {
+export default function Navbar() {
+    const { sayHi, mode, dologin, dosignup } = useAuth();
   return (
       <nav className="navbar">
           <div className='navbar-container'>
@@ -15,8 +18,8 @@ import { Link } from 'react-router-dom'
               </div>
               <div className='navbar-auth'>
                   <div className='navbar-auth-links'>
-                  <Link to="/auth" className='btn btn-primary'>Login</Link>
-                  <Link to="/auth" className='btn btn-secondary'>Signup</Link>
+                  <Link to="/auth" className='btn btn-primary' onClick={dologin}>Login</Link>
+                  <Link to="/auth" className='btn btn-secondary' onClick={dosignup}>Signup</Link>
                   </div>
                   </div>
           </div>

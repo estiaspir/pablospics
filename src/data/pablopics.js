@@ -26,6 +26,26 @@ const pablopics = [
       "/pablo2.jpg",
     description:
      " We went out when it was dark",
+  },
+    
+    {
+    id: 4,
+    name: "Pablo with is bone",
+    date: "16.1.26",
+    image:
+      "/pablo3.jpg",
+    description:
+     " He's chewing his bone.",
+  },
+    
+     {
+    id: 5,
+    name: "Will his ears be pointig up or dropping down?",
+    date: "29.11.25",
+    image:
+      "/pablo4.jpg",
+    description:
+     " He's so cute.",
     },
 ]
 
