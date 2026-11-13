@@ -9,7 +9,9 @@ export default function ProductCard({ pic }) {
                 <p className="product-card-price"> {pic.date}</p>
              
               <div className="product-card-actions">
-                <Link className="btn btn-secondary">View Details</Link>
+                <Link className="btn btn-secondary" to={`/products/${pic.id}`}>
+                  View Details
+                </Link>
                 <button className="btn btn-primary">Add to Cart</button>
               </div>
               </div> 
